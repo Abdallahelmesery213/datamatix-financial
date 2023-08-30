@@ -127,11 +127,12 @@ header .right-part .nav2 ul li:not(:last-child)::after{
     font-family: lightFont;
     transform: translateY(50%);
     font-size: 15px;
+    line-height: 15px;
 }
 .banner_1 .banner-footer ul{
     display: flex;
     justify-content: space-evenly;
-    transform: translateY(4px);
+    transform: translateY(0);
 }
 .banner_1 .banner-footer ul li button{
     color: #fff;
@@ -464,6 +465,15 @@ footer form .btn{
 /* start home sreen */
 
 /* start media query */
+@media only screen and (max-width: 1284px) {
+    .banner_1 .banner-footer ul{
+       
+        transform: translateY(10px);
+    }
+    .banner_1 .banner-footer p{
+        font-size: 13px;
+    }
+}
 @media only screen and (max-width: 991px) {
     .banner_2 .banner-description h3 {
         font-size: 20px;
